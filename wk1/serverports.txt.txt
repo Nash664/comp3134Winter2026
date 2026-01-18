@@ -1,0 +1,4 @@
+1: A server port is an identifier used by a server to identify different services running on the same machine.
+2:0-65535
+3:16 bits
+4:443, 80, 21, 22, 23, 67, 25, 53, 123, 445, 3306, 5432, 8080, 110,143
