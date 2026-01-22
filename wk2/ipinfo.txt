@@ -1,0 +1,49 @@
+root@lamp-ubuntu-24:~# nslookup google.com
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+Non-authoritative answer:
+Name:   google.com
+Address: 142.250.139.100
+Name:   google.com
+Address: 142.250.139.138
+
+root@lamp-ubuntu-24:~# nslookup georgebrown.ca
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+Non-authoritative answer:
+Name:   georgebrown.ca
+Address: 198.96.86.176
+
+
+root@lamp-ubuntu-24:~# nslookup apple.com
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+Non-authoritative answer:
+Name:   apple.com
+Address: 17.253.144.10
+Name:   apple.com
+Address: 2620:149:af0::10
+
+
+root@lamp-ubuntu-24:~# nslookup samsung.com
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+Non-authoritative answer:
+Name:   samsung.com
+Address: 211.45.27.231
+
+root@lamp-ubuntu-24:~# nslookup sony.com
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+Non-authoritative answer:
+Name:   sony.com
+Address: 44.218.59.236
+Name:   sony.com
+Address: 52.6.127.76
+
+

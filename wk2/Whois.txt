@@ -1,0 +1,142 @@
+Domain Information
+
+Name
+georgebrown.ca
+Registry Domain ID
+D121739-CIRA
+Registered On
+2002-07-04T08:35:23Z
+Expires On
+2026-07-04T04:00:00Z
+Updated On
+2026-01-15T16:03:54Z
+Domain Status
+client transfer prohibited
+
+Name Servers
+ns1.d-zone.ca
+
+ns1.georgebrown.ca
+
+ns2.d-zone.ca
+
+ns2.georgebrown.ca
+
+
+
+Name
+GOOGLE.COM
+Registry Domain ID
+2138514_DOMAIN_COM-VRSN
+Registered On
+1997-09-15T04:00:00Z
+Expires On
+2028-09-14T04:00:00Z
+Updated On
+2019-09-09T15:39:04Z
+Domain Status
+client delete prohibited
+
+client transfer prohibited
+
+client update prohibited
+
+server delete prohibited
+
+server transfer prohibited
+
+server update prohibited
+
+Name Servers
+NS1.GOOGLE.COM
+
+NS2.GOOGLE.COM
+
+NS3.GOOGLE.COM
+
+NS4.GOOGLE.COM
+
+Domain Information
+
+Name
+APPLE.COM
+Registry Domain ID
+1225976_DOMAIN_COM-VRSN
+Registered On
+1987-02-19T05:00:00Z
+Expires On
+2026-02-20T05:00:00Z
+Updated On
+2025-01-21T23:06:01Z
+Domain Status
+client delete prohibited
+
+client transfer prohibited
+
+client update prohibited
+
+server delete prohibited
+
+server transfer prohibited
+
+server update prohibited
+
+Name Servers
+A.NS.APPLE.COM
+
+B.NS.APPLE.COM
+
+C.NS.APPLE.COM
+
+D.NS.APPLE.COM
+
+
+Name
+SAMSUNG.COM
+Registry Domain ID
+1521529_DOMAIN_COM-VRSN
+Registered On
+1994-11-29T05:00:00Z
+Expires On
+2026-11-28T05:00:00Z
+Updated On
+2025-10-22T07:00:50Z
+Domain Status
+client transfer prohibited
+
+client update prohibited
+
+Name Servers
+DNS-AWSKR1.SAMSUNG.COM
+
+DNS-GI1.SAMSUNG.COM
+
+DNSSM.SAMSUNG.COM
+
+DNSSM2.SAMSUNG.COM
+
+DNSST.SAMSUNG.COM
+
+DNSST2.SAMSUNG.COM
+
+Name
+STEAM.COM
+Registry Domain ID
+1415740_DOMAIN_COM-VRSN
+Registered On
+1994-07-13T04:00:00Z
+Expires On
+2030-07-12T04:00:00Z
+Updated On
+2025-03-05T01:59:53Z
+Domain Status
+client delete prohibited
+
+client transfer prohibited
+
+Name Servers
+NS53.DOMAINCONTROL.COM
+
+NS54.DOMAINCONTROL.COM
+
+
