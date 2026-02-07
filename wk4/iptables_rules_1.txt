@@ -1,0 +1,87 @@
+IPTABLES(8)                      iptables 1.8.10                      IPTABLES(8)
+
+NAME
+       iptables/ip6tables  —  administration  tool for IPv4/IPv6 packet filtering
+       and NAT
+
+SYNOPSIS
+       iptables [-t table] {-A|-C|-D|-V} chain rule-specification
+
+       ip6tables [-t table] {-A|-C|-D|-V} chain rule-specification
+
+       iptables [-t table] -I chain [rulenum] rule-specification
+
+       iptables [-t table] -R chain rulenum rule-specification
+
+       iptables [-t table] -D chain rulenum
+
+       iptables [-t table] -S [chain [rulenum]]
+
+       iptables [-t table] {-F|-L|-Z} [chain [rulenum]] [options...]
+
+       iptables [-t table] -N chain
+
+       iptables [-t table] -X [chain]
+
+       iptables [-t table] -P chain target
+
+       iptables [-t table] -E old-chain-name new-chain-name
+
+       rule-specification = [matches...] [target]
+
+       match = -m matchname [per-match-options]
+
+       target = -j targetname [per-target-options]
+
+
+root@lamp-ubuntu-24:~# apt-get update
+Hit:1 http://mirrors.digitalocean.com/ubuntu noble InRelease
+Get:2 http://mirrors.digitalocean.com/ubuntu noble-updates InRelease [126 kB]
+Hit:3 https://repos-droplet.digitalocean.com/apt/droplet-agent main InRelease
+Hit:4 http://mirrors.digitalocean.com/ubuntu noble-backports InRelease
+Hit:5 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:6 https://ppa.launchpadcontent.net/ondrej/php/ubuntu noble InRelease
+Get:7 http://mirrors.digitalocean.com/ubuntu noble-updates/main amd64 Packages [1739 kB]
+Get:8 http://mirrors.digitalocean.com/ubuntu noble-updates/universe amd64 Packages [1528 kB]
+Fetched 3393 kB in 8s (449 kB/s)
+Reading package lists... Done
+
+root@lamp-ubuntu-24:~# apt-get install iptables
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+iptables is already the newest version (1.8.10-3ubuntu2).
+iptables set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 66 not upgraded.
+
+root@lamp-ubuntu-24:~# iptables -L -v
+Chain INPUT (policy DROP 266K packets, 13M bytes)
+ pkts bytes target     prot opt in     out     source               destination     
+ 660K  386M ufw-before-logging-input  all  --  any    any     anywhere             anywhere
+ 660K  386M ufw-before-input  all  --  any    any     anywhere             anywhere 
+ 267K   13M ufw-after-input  all  --  any    any     anywhere             anywhere  
+ 266K   13M ufw-after-logging-input  all  --  any    any     anywhere             anywhere
+ 266K   13M ufw-reject-input  all  --  any    any     anywhere             anywhere 
+ 266K   13M ufw-track-input  all  --  any    any     anywhere             anywhere  
+
+Chain FORWARD (policy DROP 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination     
+    0     0 ufw-before-logging-forward  all  --  any    any     anywhere             anywhere
+    0     0 ufw-before-forward  all  --  any    any     anywhere             anywhere
+    0     0 ufw-after-forward  all  --  any    any     anywhere             anywhere
+    0     0 ufw-after-logging-forward  all  --  any    any     anywhere             anywhere
+    0     0 ufw-reject-forward  all  --  any    any     anywhere             anywhere
+    0     0 ufw-track-forward  all  --  any    any     anywhere             anywhere
+
+Chain OUTPUT (policy ACCEPT 2634 packets, 160K bytes)
+ pkts bytes target     prot opt in     out     source               destination     
+ 502K   87M ufw-before-logging-output  all  --  any    any     anywhere             anywhere
+ 502K   87M ufw-before-output  all  --  any    any     anywhere             anywhere
+ 9389  728K ufw-after-output  all  --  any    any     anywhere             anywhere 
+ 9389  728K ufw-after-logging-output  all  --  any    any     anywhere             anywhere
+ 9389  728K ufw-reject-output  all  --  any    any     anywhere             anywhere
+ 9389  728K ufw-track-output  all  --  any    any     anywhere             anywhere 
+
+Chain ufw-after-forward (1 references)
+ pkts bytes target     prot opt in     out     source               destination     
+

@@ -1,0 +1,49 @@
+root@lamp-ubuntu-24:~# tcpdump -c 5 -xx -i eth0
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+20:45:16.466636 IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.54157: Flags [P.], seq 4285752553:4285752741, ack 1604930545, win 962, length 188
+        0x0000:  fe00 0000 0101 9e8e cc67 17b5 0800 4510
+        0x0010:  00e4 2033 4000 4006 f232 8ac5 a3a1 63f1
+        0x0020:  9546 0016 d38d ff73 64e9 5fa9 4bf1 5018
+        0x0030:  03c2 2875 0000 6dd4 60d1 24cd f478 eef3
+        0x0040:  cc85 a0fc c957 2e10 156e d43c ea88 c89a
+        0x0050:  a9bf 3ea4 4a89 35b5 abba de84 550e fffc
+        0x0060:  9a73 6d03 d5b4 7ac4 9fbc 35cf 24db a49b
+        0x0070:  2e63 959a 6cfc 98b4 09e1 3b60 e414 83cf
+        0x0080:  378d a941 ab19 6d63 1186 1afe f8ea 8eea
+        0x0090:  cd49 6295 53aa c02e 2a0b 87ff 0604 49d6
+        0x00a0:  53c3 d8b0 2f27 2e17 de3b 0050 fab7 8ac1
+        0x00b0:  6b0f ecca 4b85 f246 8af3 d220 990e 8394
+        0x00c0:  1cf6 6073 fe25 8a4c 3f59 71f5 24b3 848d
+        0x00d0:  eca1 7071 29f0 e5ec c91f ae10 2314 8108
+        0x00e0:  de2d c155 54e8 d44a 1ba3 d206 439a 232f
+        0x00f0:  66a9
+20:45:16.469889 IP pool-99-241-149-70.cpe.net.cable.rogers.com.54157 > lamp-ubuntu-24.04.ssh: Flags [P.], seq 1:37, ack 4294967244, win 4090, length 36
+        0x0000:  9e8e cc67 17b5 fe00 0000 0101 0800 4500
+        0x0010:  004c 011e 4000 7706 daef 63f1 9546 8ac5
+        0x0020:  a3a1 d38d 0016 5fa9 4bf1 ff73 64b5 5018
+        0x0030:  0ffa 3aab 0000 ed57 63de fd42 e092 ba53
+        0x0040:  50d2 ec60 4e0c 1291 d414 ea8c d059 dc8f
+        0x0050:  64c9 cfdd 167e ccd7 4f44
+20:45:16.470012 IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.54157: Flags [P.], seq 188:224, ack 37, win 962, length 36
+        0x0000:  fe00 0000 0101 9e8e cc67 17b5 0800 4510
+        0x0010:  004c 2034 4000 4006 f2c9 8ac5 a3a1 63f1
+        0x0020:  9546 0016 d38d ff73 65a5 5fa9 4c15 5018
+        0x0030:  03c2 27dd 0000 96bc a77c 082e f1b5 cca9
+        0x0040:  1449 f4a9 c176 117e 0a2b 0a0c f115 e2dc
+        0x0050:  1890 8867 ced2 d233 203d
+20:45:16.494024 IP pool-99-241-149-70.cpe.net.cable.rogers.com.54157 > lamp-ubuntu-24.04.ssh: Flags [.], ack 188, win 4095, length 0
+        0x0000:  9e8e cc67 17b5 fe00 0000 0101 0800 4500
+        0x0010:  0028 0120 4000 7706 db11 63f1 9546 8ac5
+        0x0020:  a3a1 d38d 0016 5fa9 4c15 ff73 65a5 5010
+        0x0030:  0fff 93bb 0000 0000 0000 0000
+20:45:16.513143 IP pool-99-241-149-70.cpe.net.cable.rogers.com.54157 > lamp-ubuntu-24.04.ssh: Flags [P.], seq 37:73, ack 224, win 4095, length 36
+        0x0000:  9e8e cc67 17b5 fe00 0000 0101 0800 4500
+        0x0010:  004c 0121 4000 7706 daec 63f1 9546 8ac5
+        0x0020:  a3a1 d38d 0016 5fa9 4c15 ff73 65c9 5018
+        0x0030:  0fff 07b5 0000 d1c8 d20d 8d92 59c3 faec
+        0x0040:  8222 a614 09b3 7869 1705 29b6 9570 8c56
+        0x0050:  f3db 7768 3fd7 ac31 a179
+5 packets captured
+14 packets received by filter
+0 packets dropped by kernel

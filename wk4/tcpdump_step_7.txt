@@ -1,0 +1,7 @@
+root@lamp-ubuntu-24:~# tcpdump -r 0001.pcap
+reading from file 0001.pcap, link-type EN10MB (Ethernet), snapshot length 262144
+20:46:36.722032 IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.54157: Flags [P.], seq 4285797237:4285797361, ack 1604971977, win 984, length 124
+20:46:36.737886 IP pool-99-241-149-70.cpe.net.cable.rogers.com.54157 > lamp-ubuntu-24.04.ssh: Flags [P.], seq 1:37, ack 0, win 4095, length 36
+20:46:36.738076 IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.54157: Flags [P.], seq 124:160, ack 37, win 984, length 36
+20:46:36.754959 IP pool-99-241-149-70.cpe.net.cable.rogers.com.54157 > lamp-ubuntu-24.04.ssh: Flags [.], ack 160, win 4094, length 0
+20:46:36.755045 IP pool-99-241-149-70.cpe.net.cable.rogers.com.54157 > lamp-ubuntu-24.04.ssh: Flags [P.], seq 37:73, ack 160, win 4094, length 36

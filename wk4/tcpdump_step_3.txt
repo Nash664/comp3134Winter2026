@@ -1,0 +1,36 @@
+tcpdump -A -i eth0
+.}o<...xE.c.../..K}......>5...V.q....:....
+.......L...E].s.''d...!..n..d.....B..d.-LT/......`.!."....3..Mz.f..RS..p.P
+.tU{G.t.......:q....{9.........f8O9Y..F..M....
+.5..&......f.J"8I....F&1..pt|l#...:7..X.....*.M'...)..O....|.....F...3.z..n....iy8.......Q .1.2.A.e..`..j8.     ............E...Y..?MT.l....B...T."m....$B..TaqV4O.w...
+..e&.f....#..:,.4...R......XNw..^|.U.l..Kzh.+z....u}..  .C!Wh..d....?...xG&........M...@...Yi.9...U
+....6.-.6.\..W.P......X...,......k...."#..              *.(.S2.\..?.).j..`..2A.{.@....wNoZi.....|o.HC!t.S._...'.....F..J..1...?.?.,.;...ep....Vw.....s....Q....[a!...Z........pK.(..L
+....eB...a
+.......HP.....6.....c...0ii3..UQ...=......e[v..'.\v...O..(F....[.K(.j...v0G..1t.]...S.q]..i....
+..fd).z~r...PJc.....KNv..n...mX.h!n.yBY..R...&Y.z.Vx..1..f.35"..6...E)qMi.:.20.....R...cV._m...-6B...o...)!..........D: t.O.1?'..0L...).*.e..:.(\2z.z.\r|....
+20:42:06.345959 IP pool-99-241-149-70.cpe.net.cable.rogers.com.54157 > lamp-ubuntu-24.04.ssh: Flags [P.], seq 397:433, ack 15380, win 2047, length 36
+E..L.#@.w...c..F........_.N     .-..P.......r.[.^.-7....Z.wMB.m.>Qw:?,....Z..y..
+20:42:06.345960 IP pool-99-241-149-70.cpe.net.cable.rogers.com.54157 > lamp-ubuntu-24.04.ssh: Flags [.], ack 31928, win 2047, length 0
+E..(.+@.w...c..F........_.NQ.-.aP....
+........
+20:42:06.346213 IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.54157: Flags [P.], seq 31928:31964, ack 433, win 711, length 36
+E..L.Y@.@.(.....c..F.....-.a_.N-P...'.....o&......]..b..zC0....`..N^R.:.v.)E
+20:42:06.354594 IP pool-99-241-149-70.cpe.net.cable.rogers.com.54157 > lamp-ubuntu-24.04.ssh: Flags [P.], seq 433:469, ack 15380, win 2047, length 36
+E..L.$@.w...c..F........_.N-.-..P...2).....k.hJ........q%`d..^Q..IL...A....u
+20:42:06.354759 IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.54157: Flags [P.], seq 31964:32000, ack 469, win 711, length 36
+E..L.Z@.@.(.....c..F.....-.._.NQP...'...?n...%b.._."b..2T..lr...3.v\.7"..L..
+20:42:06.397938 IP pool-99-241-149-70.cpe.net.cable.rogers.com.54157 > lamp-ubuntu-24.04.ssh: Flags [.], ack 31964, win 2047, length 0
+E..(.,@.w...c..F........_.NQ.-..P.............
+20:42:06.397939 IP pool-99-241-149-70.cpe.net.cable.rogers.com.54157 > lamp-ubuntu-24.04.ssh: Flags [P.], seq 469:505, ack 31964, win 2047, length 36
+E..L.-@.w...c..F........_.NQ.-..P...;)....1....S...p........\M%......b~-q...
+20:42:06.398132 IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.54157: Flags [P.], seq 32000:32036, ack 505, win 711, length 36
+E..L.[@.@.(.....c..F.....-.._.NuP...'...e
+.B.H.~...UR..0E.....AcT.X...u....z
+20:42:06.406486 IP pool-99-241-149-70.cpe.net.cable.rogers.com.54157 > lamp-ubuntu-24.04.ssh: Flags [P.], seq 505:541, ack 32000, win 2047, length 36
+E..L..@.w...c..F........_.Nu.-..P.......J..O..r......."..       .8V.%..ml.h.:*.}:.
+20:42:06.406652 IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.54157: Flags [P.], seq 32036:32072, ack 541, win 711, length 36
+E..L.\@.@.(.....c..F.....-.._.N.P...'...W....z.q........-....../.i..O.a.5../
+^C
+124 packets captured
+190 packets received by filter
+0 packets dropped by kernel

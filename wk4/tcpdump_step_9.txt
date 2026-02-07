@@ -1,0 +1,11 @@
+root@lamp-ubuntu-24:~# tcpdump -c 5 -i eth0 tcp
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+20:51:52.097799 IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.54157: Flags [P.], seq 4285873093:4285873201, ack 1605044537, win 1030, length 108
+20:51:52.097939 IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.54157: Flags [P.], seq 108:264, ack 1, win 1030, length 156
+20:51:52.098027 IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.54157: Flags [P.], seq 264:368, ack 1, win 1030, length 104
+20:51:52.104880 IP pool-99-241-149-70.cpe.net.cable.rogers.com.54157 > lamp-ubuntu-24.04.ssh: Flags [P.], seq 1:37, ack 4294967244, win 4095, length 36
+20:51:52.105055 IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.54157: Flags [P.], seq 368:404, ack 37, win 1030, length 36
+5 packets captured
+19 packets received by filter
+0 packets dropped by kernel
