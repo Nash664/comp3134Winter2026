@@ -1,0 +1,42 @@
+root@lamp-ubuntu-24:~# sudo  tcpdump -i any
+tcpdump: data link type LINUX_SLL2
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
+20:41:29.668175 eth0  Out IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.55128: Flags [P.], seq 2011637326:2011637402, ack 979520719, win 477, options [nop,nop,sack 1 {37:109}], length 76
+20:41:29.675736 eth0  Out IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.55128: Flags [P.], seq 76:192, ack 1, win 477, options [nop,nop,sack 1 {37:109}], length 116
+20:41:29.675840 eth0  Out IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.55128: Flags [P.], seq 192:316, ack 1, win 477, options [nop,nop,sack 1 {37:109}], length 124
+20:41:29.681220 eth0  In  IP pool-99-241-149-70.cpe.net.cable.rogers.com.55128 > lamp-ubuntu-24.04.ssh: Flags [P.], seq 1:109, ack 0, win 250, length 108
+20:41:29.681307 eth0  Out IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.55128: Flags [.], ack 109, win 477, options [nop,nop,sack 1 {37:109}], length 0
+20:41:29.681510 eth0  Out IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.55128: Flags [P.], seq 316:424, ack 109, win 477, length 108
+20:41:29.689669 eth0  In  IP pool-99-241-149-70.cpe.net.cable.rogers.com.55128 > lamp-ubuntu-24.04.ssh: Flags [P.], seq 1:37, ack 0, win 250, length 36
+20:41:29.689669 eth0  In  IP pool-99-241-149-70.cpe.net.cable.rogers.com.55128 > lamp-ubuntu-24.04.ssh: Flags [P.], seq 109:145, ack 76, win 250, length 36
+20:41:29.689719 eth0  Out IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.55128: Flags [.], ack 109, win 477, options [nop,nop,sack 1 {1:37}], length 0
+20:41:29.689740 eth0  Out IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.55128: Flags [.], ack 145, win 477, length 0
+20:41:29.689872 eth0  Out IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.55128: Flags [P.], seq 424:460, ack 145, win 477, length 36
+20:41:29.698394 eth0  In  IP pool-99-241-149-70.cpe.net.cable.rogers.com.55128 > lamp-ubuntu-24.04.ssh: Flags [.], ack 316, win 255, length 0
+20:41:29.707064 eth0  In  IP pool-99-241-149-70.cpe.net.cable.rogers.com.55128 > lamp-ubuntu-24.04.ssh: Flags [.], ack 460, win 255, length 0
+20:41:29.707064 eth0  In  IP pool-99-241-149-70.cpe.net.cable.rogers.com.55128 > lamp-ubuntu-24.04.ssh: Flags [P.], seq 145:181, ack 460, win 255, length 36
+20:41:29.707265 eth0  Out IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.55128: Flags [P.], seq 460:496, ack 181, win 477, length 36
+20:41:29.743711 eth0  In  IP pool-99-241-149-70.cpe.net.cable.rogers.com.55128 > lamp-ubuntu-24.04.ssh: Flags [P.], seq 181:217, ack 496, win 255, length 36
+20:41:29.743934 eth0  Out IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.55128: Flags [P.], seq 496:532, ack 217, win 477, length 36
+20:41:29.761203 eth0  In  IP pool-99-241-149-70.cpe.net.cable.rogers.com.55128 > lamp-ubuntu-24.04.ssh: Flags [P.], seq 217:253, ack 532, win 255, length 36
+20:41:29.761402 eth0  Out IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.55128: Flags [P.], seq 532:568, ack 253, win 477, length 36
+20:41:29.768850 lo    In  IP localhost.51163 > _localdnsstub.domain: 47213+ [1au] PTR? 70.149.241.99.in-addr.arpa. (55)
+20:41:29.769199 eth0  Out IP lamp-ubuntu-24.04.56991 > 67.207.67.3.domain: 57139+ [1au] PTR? 70.149.241.99.in-addr.arpa. (55)
+20:41:29.769302 eth0  Out IP lamp-ubuntu-24.04.45121 > 67.207.67.3.domain: 20737+ [1au] PTR? 70.149.241.99.in-addr.arpa. (55)
+20:41:29.769370 eth1  Out ARP, Request who-has 67.207.67.3 tell 10.118.0.2, length 28
+20:41:29.780285 eth0  In  IP 67.207.67.3.domain > lamp-ubuntu-24.04.56991: 57139 1/0/1 PTR pool-99-241-149-70.cpe.net.cable.rogers.com. (112)
+20:41:29.780355 eth0  In  IP 67.207.67.3.domain > lamp-ubuntu-24.04.45121: 20737 1/0/1 PTR pool-99-241-149-70.cpe.net.cable.rogers.com. (112)
+20:41:29.780676 lo    In  IP _localdnsstub.domain > localhost.51163: 47213 1/0/1 PTR pool-99-241-149-70.cpe.net.cable.rogers.com. (112)
+20:41:29.780985 lo    In  IP localhost.36888 > _localdnsstub.domain: 28470+ [1au] PTR? 161.163.197.138.in-addr.arpa. (57)
+20:41:29.781206 eth0  Out IP lamp-ubuntu-24.04.59382 > 67.207.67.3.domain: 51301+ [1au] PTR? 161.163.197.138.in-addr.arpa. (57)
+20:41:29.784716 eth0  In  IP pool-99-241-149-70.cpe.net.cable.rogers.com.55128 > lamp-ubuntu-24.04.ssh: Flags [P.], seq 253:289, ack 568, win 255, length 36
+20:41:29.784878 eth0  Out IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.55128: Flags [P.], seq 568:604, ack 289, win 477, length 36
+20:41:29.803511 eth0  In  IP 67.207.67.3.domain > lamp-ubuntu-24.04.59382: 51301 1/0/1 PTR lamp-ubuntu-24.04. (88)
+20:41:29.803808 lo    In  IP _localdnsstub.domain > localhost.36888: 28470 1/0/1 PTR lamp-ubuntu-24.04. (88)
+20:41:29.804686 eth0  Out IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.55128: Flags [P.], seq 604:3524, ack 289, win 477, length 2920
+20:41:29.804786 eth0  Out IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.55128: Flags [P.], seq 3524:3752, ack 289, win 477, length 228
+20:41:29.832239 eth0  In  IP pool-99-241-149-70.cpe.net.cable.rogers.com.55128 > lamp-ubuntu-24.04.ssh: Flags [.], ack 3524, win 255, length 0
+20:41:29.832239 eth0  In  IP pool-99-241-149-70.cpe.net.cable.rogers.com.55128 > lamp-ubuntu-24.04.ssh: Flags [P.], seq 289:325, ack 604, win 254, length 36
+20:41:29.832442 eth0  Out IP lamp-ubuntu-24.04.ssh > pool-99-241-149-70.cpe.net.cable.rogers.com.55128: Flags [P.], seq 3752:3788, ack 325, win 477, length 36
+20:41:29.849466 eth0  I
