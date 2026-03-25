@@ -1,0 +1,2 @@
+1.seeing failed to open because no such directory or is present
+2.sensitive information are the files and directory

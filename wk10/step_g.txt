@@ -1,0 +1,5 @@
+To mitigate the problem, I will convert all HTML comments into PHP comments.
+
+HTML comments can be viewed by anyone using the browser's View Source option, which may expose sensitive information such as names, IDs, notes, or internal details.
+
+PHP comments are processed on the server side and are not sent to the browser, so the user cannot see them in the page source.

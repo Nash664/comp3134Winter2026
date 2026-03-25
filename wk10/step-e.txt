@@ -1,0 +1,7 @@
+I will use basename() on the user input to strip any directory paths such as ../.
+
+This ensures the input is treated only as a folder name, preventing attackers from navigating outside the intended directory (e.g., accessing system files).
+
+Prevent accessing non-existent folders
+I will use file_exists() (and is_dir()) to verify the folder exists before scanning it.
+This avoids errors and prevents the application from attempting to read invalid or non-existent paths.

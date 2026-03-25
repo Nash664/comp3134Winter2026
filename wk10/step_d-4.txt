@@ -1,0 +1,1 @@
+i see a bunch of files and directories like, log, www, tmp, mail, lib, local,opt
