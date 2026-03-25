@@ -1,0 +1,12 @@
+
+strip_tags():
+- Removes all HTML and PHP tags from user input.
+- Example: <b>Hello</b> → Hello
+- The tags are completely removed and not visible in output.
+- It may remove useful formatting.
+
+htmlentities():
+- Converts HTML characters into safe text (entities).
+- Example: <b>Hello</b> → &lt;b&gt;Hello&lt;/b&gt;
+- The tags are displayed as text instead of being executed.
+- Safer because it preserves user input while preventing execution.

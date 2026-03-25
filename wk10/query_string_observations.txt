@@ -1,0 +1,7 @@
+1. i searched the work play and it showed the meaning of that word.
+
+2. i typed an invalid English word in the url after browse and it shows no results found for that
+
+3. <script>alert(%27hello%27)</script i typed this and they blocked me from the site.
+
+4. i was blocked by the site again after typing that in url
