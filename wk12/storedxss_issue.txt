@@ -1,0 +1,10 @@
+Stored XSS — observed issues
+=============================
+
+1. Untrusted data in storage: storedxss.txt contains HTML/script. Anything that can write to this file (or a future database) controls what the application serves.
+
+2. No output encoding: storexss.php echoes file contents directly into the HTML response. The browser parses script tags and runs JavaScript in the victim's origin.
+
+3. Impact: Visiting storexss.php can redirect the user (as in the sample payload), steal cookies/session tokens on the same site, deface the page, or load other malicious behavior — all running with the user's session privileges for this origin.
+
+4. Defense in depth: sanitize/validate on write, escape or use static templates on read, use Content-Security-Policy, and serve sensitive actions over POST with CSRF tokens as appropriate.

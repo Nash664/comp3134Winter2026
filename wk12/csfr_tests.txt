@@ -1,0 +1,18 @@
+CSRF mitigation — what I noticed
+=================================
+
+1. csfr.php + csfr.html (no token)
+   - Opening csfr.html causes an automatic POST to csfr.php with username "host" and password "pass".
+   - If the victim is already logged into or the app "trusts" the browser session, the action still completes in many designs; here the forged request alone produces a success message because the server only checks posted credentials — there is no secret the attacker site cannot replay.
+
+2. csfr_form.php + csfr_action.php (with token)
+   - csfr_form.php starts a PHP session and stores a random value in $_SESSION["confirmation"], and sends the same value in a hidden field.
+   - csfr_action.php requires hash_equals(session token, POST token) before it even evaluates username/password.
+   - A page like csfr.html cannot know the victim’s session-bound token, so a blind auto-POST to csfr_action.php either omits "confirmation" or sends a wrong value → the server rejects the request.
+
+3. Same-origin vs cross-origin
+   - The forged page can still POST cross-origin; mitigation here is not CORS — it is making the request depend on a secret tied to the user’s session that only legitimate pages from your workflow can supply (when combined with cookie settings like SameSite; this lab focuses on the synchronizer token pattern).
+
+4. Practical notes
+   - Tokens should be required for state-changing POSTs, rotated on privilege changes, and compared with a timing-safe function (hash_equals).
+   - For a full comparison, point csfr.html’s form action at csfr_action.php (with host/pass still) and observe failure, while csfr_form.php → csfr_action.php with correct credentials succeeds.

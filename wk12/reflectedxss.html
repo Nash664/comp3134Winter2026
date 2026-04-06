@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflected XSS lab</title>
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; }
+        label { display: block; margin-bottom: 0.5rem; }
+        input[type="text"] { width: 100%; box-sizing: border-box; padding: 0.5rem; }
+        button { margin-top: 0.75rem; padding: 0.5rem 1rem; }
+        #output {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            min-height: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reflected XSS demonstration</h1>
+    <form id="xssForm" action="#" method="get">
+        <label for="userInput">Enter text</label>
+        <input type="text" id="userInput" name="q" autocomplete="off">
+        <button type="submit">Submit</button>
+    </form>
+    <div id="output"></div>
+    <script>
+        document.getElementById('xssForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            var val = document.getElementById('userInput').value;
+            document.getElementById('output').innerHTML = val;
+        });
+    </script>
+</body>
+</html>
